@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 
-import CardPet from '@components/CardPet';
+import CardPet from './CardPet';
 
 type Props = {pet: Pet};
 

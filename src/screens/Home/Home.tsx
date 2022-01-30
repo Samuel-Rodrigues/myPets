@@ -1,11 +1,7 @@
 import React, {FC} from 'react';
 import {FlatList} from 'react-native';
 
-import ScreensWrapper from '../../components/ScreensWrapper/ScreensWrapper';
-
-import Input from '../../components/Input';
-import CardPet from '../../components/CardPet';
-import ButtonAdd from '../../components/ButtonAdd';
+import {ButtonAdd, ScreensWrapper, CardPet, Input} from '@components/';
 
 import {BoxCardPet, CardPetContent} from './styles';
 

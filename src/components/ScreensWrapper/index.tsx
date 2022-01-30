@@ -1,9 +1,11 @@
 import React, {FC} from 'react';
 
-type Props = {};
+import ScreensWrapper from './ScreensWrapper';
 
-const ScreensWrapperContainer: FC<Props> = () => {
-  return <div />;
+type Props = {title: string};
+
+const ScreensWrapperContainer: FC<Props> = ({title, children}) => {
+  return <ScreensWrapper title={title}>{children}</ScreensWrapper>;
 };
 
 export default ScreensWrapperContainer;

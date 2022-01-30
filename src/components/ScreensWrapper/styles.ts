@@ -11,7 +11,7 @@ export const Wrapper = styled.View`
 export const Body = styled.View`
   background-color: ${({theme}) => theme.colors.background};
   border: 2px solid ${({theme}) => theme.colors.background};
-  padding: 10px;
+  padding: ${RFValue(10)}px;
   border-top-left-radius: ${RFValue(30)}px;
   border-top-right-radius: ${RFValue(30)}px;
   padding: ${RFValue(20)}px;
