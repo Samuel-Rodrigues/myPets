@@ -1,10 +1,16 @@
 import React, {FC} from 'react';
-import {Text} from 'react-native';
+import {Wrapper} from './styles';
 
-type Props = {};
+export type VariantTextType = 'title' | 'body' | 'info';
 
-const Typography: FC<Props> = ({children, ...rest}) => {
-  return <Text {...rest}>{children}</Text>;
+type Props = {variant?: VariantTextType};
+
+const Typography: FC<Props> = ({children, variant = 'title', ...rest}) => {
+  return (
+    <Wrapper variant={variant} {...rest}>
+      {children}
+    </Wrapper>
+  );
 };
 
 export default Typography;

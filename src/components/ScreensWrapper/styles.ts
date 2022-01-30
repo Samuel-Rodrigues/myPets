@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 import {RFValue} from '../../utils/modules';
 
-import Typography from '../Typography';
+import {Typography} from '@components/';
 
 export const Wrapper = styled.View`
   background-color: ${({theme}) => theme.colors.primary};
@@ -20,7 +20,6 @@ export const Body = styled.View`
 
 export const Title = styled(Typography)`
   text-align: center;
-  font-size: ${RFValue(18)}px;
 
   margin-top: ${RFValue(10)}px;
 `;

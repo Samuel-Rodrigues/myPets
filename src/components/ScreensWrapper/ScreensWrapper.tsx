@@ -10,7 +10,7 @@ const ScreensWrapper: FC<Props> = ({children, title}) => {
     <Wrapper>
       <Header />
       <Body>
-        <Title>{title}</Title>
+        <Title variant="title">{title}</Title>
         {children}
       </Body>
     </Wrapper>

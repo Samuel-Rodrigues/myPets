@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import Typography from '../Typography';
+import {Typography} from '@components/';
 
 import {RFValue} from '../../utils/modules';
 
@@ -27,6 +27,6 @@ export const BoxIcons = styled.View`
   height: 100%;
 `;
 
-export const Name = styled(Typography)``;
+export const Name = styled(Typography).attrs({variant: 'body'})``;
 
-export const Breed = styled(Typography)``;
+export const Breed = styled(Typography).attrs({variant: 'body'})``;

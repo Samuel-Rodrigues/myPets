@@ -16,4 +16,10 @@ export default {
     text: '#969CB2',
     background: '#F6F0E9',
   },
+
+  fonts: {
+    title: {fontSize: 14, fontFamily: 'RobotoSlab-Medium'},
+    body: {fontSize: 10, fontFamily: 'RobotoSlab-Regular'},
+    info: {fontSize: 8, fontFamily: 'RobotoSlab-Regular'},
+  },
 };
