@@ -1,10 +1,21 @@
 import React, {FC} from 'react';
 import {TextInput} from 'react-native-paper';
 
-type Props = React.ComponentProps<typeof TextInput> & {};
+import {ErrorText, Wrapper} from './styles';
 
-const Input: FC<Props> = ({...rest}) => {
-  return <TextInput {...rest} />;
+type Props = React.ComponentProps<typeof TextInput> & {helperText?: string};
+
+const Input: FC<Props> = ({helperText, ...rest}) => {
+  return (
+    <>
+      <Wrapper {...rest} />
+      {!!helperText && (
+        <ErrorText type="error" visible>
+          {helperText}
+        </ErrorText>
+      )}
+    </>
+  );
 };
 
 export default Input;

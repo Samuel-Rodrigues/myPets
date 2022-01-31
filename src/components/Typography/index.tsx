@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import {Wrapper} from './styles';
 
-export type VariantTextType = 'title' | 'body' | 'info';
+export type VariantTextType = 'title' | 'body' | 'info' | 'titleLogo';
 
 type Props = {variant?: VariantTextType};
 

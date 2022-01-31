@@ -14,12 +14,12 @@ import {ThemeProvider} from 'styled-components';
 
 import React from 'react';
 
-import Home from './src/screens/Home';
+import {Login, Home} from '@screens/';
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Home />
+      <Login />
     </ThemeProvider>
   );
 };

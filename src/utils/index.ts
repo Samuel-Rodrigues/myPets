@@ -1,1 +1,6 @@
-export {RFValue, getBottomSpace, getStatusBarHeight} from './modules';
+export {
+  RFValue,
+  getBottomSpace,
+  getStatusBarHeight,
+  RectButton,
+} from './modules';

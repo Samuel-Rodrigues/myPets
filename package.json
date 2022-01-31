@@ -11,12 +11,16 @@
     "tsc": "tsc --skipLibCheck"
   },
   "dependencies": {
+    "formik": "^2.2.9",
     "react": "17.0.2",
     "react-native": "0.66.4",
+    "react-native-gesture-handler": "^2.2.0",
     "react-native-iphone-x-helper": "^1.3.1",
     "react-native-paper": "^4.11.2",
     "react-native-responsive-fontsize": "^0.5.1",
-    "styled-components": "^5.3.3"
+    "react-native-svg": "^12.1.1",
+    "styled-components": "^5.3.3",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
@@ -37,6 +41,7 @@
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.66.2",
     "prettier": "^2.5.1",
+    "react-native-svg-transformer": "^1.0.0",
     "react-test-renderer": "17.0.2",
     "typescript": "^4.4.4"
   },

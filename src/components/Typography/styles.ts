@@ -13,6 +13,8 @@ export const Wrapper = styled.Text<TextProps>`
       ? theme.fonts.title.fontFamily
       : variant === 'body'
       ? theme.fonts.body.fontFamily
+      : variant === 'titleLogo'
+      ? theme.fonts.titleLogo.fontFamily
       : theme.fonts.info.fontFamily};
 
   font-size: ${({variant, theme}) =>
@@ -20,5 +22,7 @@ export const Wrapper = styled.Text<TextProps>`
       ? RFValue(theme.fonts.title.fontSize)
       : variant === 'body'
       ? RFValue(theme.fonts.body.fontSize)
+      : variant === 'titleLogo'
+      ? RFValue(theme.fonts.titleLogo.fontSize)
       : RFValue(theme.fonts.info.fontSize)}px;
 `;
