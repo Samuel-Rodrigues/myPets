@@ -8,11 +8,12 @@ import Login from './Login';
 type Props = {};
 
 const LoginContainer: FC<Props> = () => {
+  const handleSubmit = () => console.warn('fez o submite');
   return (
     <Formik
       initialValues={initialValues}
       validationSchema={validationSchema}
-      onSubmit={() => console.warn('fez o submite')}>
+      onSubmit={handleSubmit}>
       <Login />
     </Formik>
   );

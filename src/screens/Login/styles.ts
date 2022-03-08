@@ -5,13 +5,12 @@ import {RFValue} from '@utils/';
 export const Wrapper = styled.View`
   background-color: ${({theme}) => theme.colors.secondary};
 
-  flex-direction: column;
-  justify-content: center;
   flex: 1;
+  justify-content: space-evenly;
 `;
 
 const BaseView = styled.View`
-  padding: ${RFValue(20)}px;
+  padding: 0 ${RFValue(35)}px;
 `;
 
 export const BoxLogo = styled(BaseView)`
@@ -23,23 +22,35 @@ export const TitleLogo = styled(Typography).attrs({variant: 'titleLogo'})`
   color: ${({theme}) => theme.colors.primary};
 `;
 
-export const SubTitleLogo = styled(Typography).attrs({variant: 'title'})`
+export const Text = styled(Typography).attrs({variant: 'title'})`
   color: ${({theme}) => theme.colors.primary_ligth};
+  text-align: center;
+`;
+
+export const BoxInput = styled.View`
+  margin-bottom: ${RFValue(10)}px;
 `;
 
 export const Input = styled(BaseInput).attrs(({theme}) => ({
-  underlineColor: theme.colors.primary_ligth,
-  activeUnderlineColor: theme.colors.primary,
+  activeUnderlineColor: theme.colors.primaty_dark,
   placeholderTextColor: theme.colors.primary_ligth,
+  theme: {
+    colors: {
+      placeholder: theme.colors.primary,
+      text: theme.colors.primaty_dark,
+      primary: theme.colors.primary,
+      background: theme.colors.tertiary,
+    },
+  },
 }))`
-  background-color: ${({theme}) => theme.colors.tertiary};
-
   border-radius: ${RFValue(10)}px;
-  margin-bottom: ${RFValue(10)}px;
+  margin-bottom: ${RFValue(2)}px;
+`;
+
+export const BoxTextForgotPass = styled.View`
+  margin-top: ${RFValue(15)}px;
 `;
 
 export const FormContent = styled(BaseView)``;
 
 export const ButtonGoIn = styled.TouchableOpacity``;
-
-export const ForgotPass = styled(Typography)``;
