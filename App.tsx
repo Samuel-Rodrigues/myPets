@@ -1,22 +1,15 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- *
- * @format
- */
-
+import React, {useEffect} from 'react';
 import theme from './src/global/styles/theme';
-
+import SplashScreen from 'react-native-splash-screen';
 import {ThemeProvider} from 'styled-components';
-
-import React from 'react';
 
 import {Login, Home, Splash} from '@screens/';
 
 const App = () => {
+  useEffect(() => {
+    SplashScreen.hide();
+  });
+
   return (
     <ThemeProvider theme={theme}>
       <Splash />

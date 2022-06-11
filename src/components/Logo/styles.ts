@@ -1,7 +1,9 @@
-import styled from 'styled-components/native';
+import styled, {css} from 'styled-components/native';
 import {Platform} from 'react-native';
 
 import {RFValue} from '@utils/';
+
+type IconProps = {size: 'small' | 'medium' | 'large'};
 
 export const Wrapper = styled.View`
   background-color: ${({theme}) => theme.colors.primary};
@@ -23,7 +25,25 @@ export const Wrapper = styled.View`
   elevation: ${RFValue(7)}px;
 `;
 
-export const Icon = styled.Image`
-  width: ${RFValue(150)}px;
-  height: ${RFValue(150)}px;
+export const Icon = styled.Image<IconProps>`
+  ${({size}) =>
+    size === 'small' &&
+    css`
+      width: ${RFValue(38)}px;
+      height: ${RFValue(38)}px;
+    `}
+
+  ${({size}) =>
+    size === 'medium' &&
+    css`
+      width: ${RFValue(75)}px;
+      height: ${RFValue(75)}px;
+    `}
+
+  ${({size}) =>
+    size === 'large' &&
+    css`
+      width: ${RFValue(150)}px;
+      height: ${RFValue(150)}px;
+    `}
 `;

@@ -2,14 +2,14 @@ import React, {FC} from 'react';
 import {DogLog} from '@assets/';
 import {Wrapper, Icon} from './styles';
 
-type Props = {};
+type Props = {size: 'small' | 'medium' | 'large'};
 
-const Logo: FC<Props> = () => {
+function Logo({size = 'large'}: Props) {
   return (
     <Wrapper>
-      <Icon source={DogLog} />
+      <Icon source={DogLog} size={size} />
     </Wrapper>
   );
-};
+}
 
 export default Logo;
