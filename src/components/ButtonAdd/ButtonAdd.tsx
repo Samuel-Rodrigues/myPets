@@ -1,5 +1,5 @@
-import React, {FC} from 'react';
-import {Wrapper} from './styles';
+import React, { FC } from 'react';
+import { Wrapper } from './styles';
 
 import Typography from '../Typography';
 

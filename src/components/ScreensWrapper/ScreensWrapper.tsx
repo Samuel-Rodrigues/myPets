@@ -1,18 +1,13 @@
-import React, {FC} from 'react';
-import {Wrapper, Body, Title} from './styles';
+import React, { FC } from 'react';
+import { Wrapper, Body } from './styles';
 
 import Header from '../Header';
 
-type Props = {title: string};
-
-const ScreensWrapper: FC<Props> = ({children, title}) => {
+const ScreensWrapper: FC = ({ children }) => {
   return (
     <Wrapper>
       <Header />
-      <Body>
-        <Title>{title}</Title>
-        {children}
-      </Body>
+      <Body>{children}</Body>
     </Wrapper>
   );
 };

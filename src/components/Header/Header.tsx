@@ -1,7 +1,5 @@
-import React, {FC} from 'react';
-import {Wrapper, BoxStart, BoxEnd} from './styles';
-
-import {Text} from 'react-native';
+import React, { FC } from 'react';
+import { Wrapper, BoxStart, BoxEnd, UserName, Perfil, Avatar } from './styles';
 
 type Props = {};
 
@@ -9,10 +7,15 @@ const Header: FC<Props> = () => {
   return (
     <Wrapper>
       <BoxStart>
-        <Text>Voltar</Text>
+        <UserName>Samuel Rodrigues</UserName>
+        <Perfil>Voluntário</Perfil>
       </BoxStart>
       <BoxEnd>
-        <Text>Botao direito</Text>
+        <Avatar
+          source={{
+            uri: 'https://avatars.githubusercontent.com/u/84452484?v=4',
+          }}
+        />
       </BoxEnd>
     </Wrapper>
   );

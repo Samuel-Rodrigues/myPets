@@ -1,10 +1,10 @@
-import React, {FC} from 'react';
+import React, { FC } from 'react';
 
 import CardPet from './CardPet';
 
-type Props = {pet: Pet};
+type Props = { pet: Pet };
 
-const CardPetContainer: FC<Props> = ({pet}) => {
+const CardPetContainer: FC<Props> = ({ pet }) => {
   return <CardPet pet={pet} />;
 };
 
