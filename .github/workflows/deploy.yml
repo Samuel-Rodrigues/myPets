@@ -8,5 +8,5 @@ jobs:
     steps:
     - name: Deploy Files
       run: |
-        git config user.name ${{ secrets.GH_USER }}
-        git config user.email "${{ secrets.GH_EMAIL }}"
+        git config user.name samuel-rodrigues
+        git config user.email "carlossamuel.rodrigues@gmail.com"
