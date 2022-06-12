@@ -1,5 +1,5 @@
-import React, {FC} from 'react';
-import {Wrapper, BoxStart, BoxEnd, UserName, Perfil, Avatar} from './styles';
+import React, { FC } from 'react';
+import { Wrapper, BoxStart, BoxEnd, UserName, Perfil, Avatar } from './styles';
 
 type Props = {};
 
@@ -12,7 +12,9 @@ const Header: FC<Props> = () => {
       </BoxStart>
       <BoxEnd>
         <Avatar
-          source={{uri: 'https://avatars.githubusercontent.com/u/84452484?v=4'}}
+          source={{
+            uri: 'https://avatars.githubusercontent.com/u/84452484?v=4',
+          }}
         />
       </BoxEnd>
     </Wrapper>

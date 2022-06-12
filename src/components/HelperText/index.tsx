@@ -1,5 +1,5 @@
-import React, {FC} from 'react';
-import {Wrapper} from './styles';
+import React, { FC } from 'react';
+import { Wrapper } from './styles';
 
 type Props = {
   type?: 'error' | 'info';
@@ -7,7 +7,7 @@ type Props = {
   show?: boolean;
 };
 
-const HelperText: FC<Props> = ({type = 'error', message, show = true}) => {
+const HelperText: FC<Props> = ({ type = 'error', message, show = true }) => {
   return (
     <>
       {show && (

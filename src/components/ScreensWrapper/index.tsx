@@ -1,8 +1,8 @@
-import React, {FC} from 'react';
+import React, { FC } from 'react';
 
 import ScreensWrapper from './ScreensWrapper';
 
-const ScreensWrapperContainer: FC = ({children}) => {
+const ScreensWrapperContainer: FC = ({ children }) => {
   return <ScreensWrapper>{children}</ScreensWrapper>;
 };
 

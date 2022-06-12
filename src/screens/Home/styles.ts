@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
-import {SelectCity} from '@components/';
-import {RFValue} from '../../utils/modules';
+import { SelectCity } from '@components/';
+import { RFValue } from '../../utils/modules';
 
 export const BoxCardPet = styled.View`
   flex: 1;

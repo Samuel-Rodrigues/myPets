@@ -1,9 +1,9 @@
-import React, {FC} from 'react';
-import {Wrapper, Body} from './styles';
+import React, { FC } from 'react';
+import { Wrapper, Body } from './styles';
 
 import Header from '../Header';
 
-const ScreensWrapper: FC = ({children}) => {
+const ScreensWrapper: FC = ({ children }) => {
   return (
     <Wrapper>
       <Header />

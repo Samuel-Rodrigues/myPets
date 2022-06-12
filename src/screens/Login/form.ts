@@ -5,4 +5,4 @@ export const validationSchema = Yup.object().shape({
   password: Yup.string().required('Senha é obrigatório'),
 });
 
-export const initialValues: LoginForm = {email: '', password: ''};
+export const initialValues: LoginForm = { email: '', password: '' };

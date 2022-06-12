@@ -1,1 +1,1 @@
-declare type LoginForm = {email: string; password: string};
+declare type LoginForm = { email: string; password: string };

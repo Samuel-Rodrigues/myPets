@@ -1,11 +1,9 @@
-import React, {FC} from 'react';
-import Icon from 'react-native-vector-icons/Ionicons';
+import React, { FC } from 'react';
 
-import {GENDER_ENUM} from '@utils/';
+import { GENDER_ENUM } from '@utils/';
 import {
   Wrapper,
   Name,
-  Breed,
   Image,
   BoxIcons,
   BoxImagem,
@@ -16,9 +14,9 @@ import {
   IconHeart,
 } from './styles';
 
-type Props = {pet: Pet};
+type Props = { pet: Pet };
 
-const CardPet: FC<Props> = ({pet: {age, name, gender, imageURL}}) => {
+const CardPet: FC<Props> = ({ pet: { age, name, gender, imageURL } }) => {
   return (
     <Wrapper>
       <BoxImagem>

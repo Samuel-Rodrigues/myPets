@@ -1,7 +1,7 @@
-import React, {FC} from 'react';
-import {Formik} from 'formik';
+import React, { FC } from 'react';
+import { Formik } from 'formik';
 
-import {initialValues, validationSchema} from './form';
+import { initialValues, validationSchema } from './form';
 
 import Login from './Login';
 

@@ -5,5 +5,5 @@ export const Wrapper = styled.View`
   justify-content: center;
   align-items: center;
 
-  background-color: ${({theme}) => theme.colors.background};
+  background-color: ${({ theme }) => theme.colors.background};
 `;

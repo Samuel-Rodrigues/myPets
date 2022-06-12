@@ -1,1 +1,1 @@
-export {default as DogLog} from './dog.png';
+export { default as DogLog } from './dog.png';

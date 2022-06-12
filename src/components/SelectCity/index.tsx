@@ -1,5 +1,4 @@
-import {resolvePreset} from '@babel/core';
-import React, {FC} from 'react';
+import React, { FC } from 'react';
 import {
   Wrapper,
   TextCity,
@@ -12,7 +11,7 @@ import {
 
 type Props = {};
 
-const SelectCity: FC<Props> = ({...rest}) => {
+const SelectCity: FC<Props> = ({ ...rest }) => {
   return (
     <Wrapper {...rest}>
       <BoxData>

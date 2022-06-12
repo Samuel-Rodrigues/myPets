@@ -1,11 +1,11 @@
 import styled from 'styled-components/native';
-import {Platform} from 'react-native';
+import { Platform } from 'react-native';
 
-import {RectButton, SPECIES_ENUM} from '@utils/';
+import { RectButton, SPECIES_ENUM } from '@utils/';
 
 import Typography from '../Typography';
 
-import {RFValue} from '@utils/';
+import { RFValue } from '@utils/';
 
 type CardProps = {
   specie: keyof typeof SPECIES_ENUM;
@@ -22,7 +22,7 @@ export const Wrapper = styled(RectButton)<CardProps>`
   align-items: flex-start;
   background-color: ${({
     theme: {
-      colors: {yellow, blue, green, brown},
+      colors: { yellow, blue, green, brown },
     },
     specie,
   }) =>
@@ -37,15 +37,15 @@ export const Wrapper = styled(RectButton)<CardProps>`
   border-radius: ${RFValue(12)}px;
 
   box-shadow: 0.3px 0.3px 0.3px;
-  shadow-color: ${({theme}) =>
+  shadow-color: ${({ theme }) =>
     Platform.OS === 'ios' && theme.colors.primary_ligth};
   elevation: ${RFValue(5)}px;
 `;
 
-export const Title = styled(Typography).attrs({variant: 'body'})<CardProps>`
+export const Title = styled(Typography).attrs({ variant: 'body' })<CardProps>`
   color: ${({
     theme: {
-      colors: {yellow_dark, blue_dark, green_dark, brown_dark},
+      colors: { yellow_dark, blue_dark, green_dark, brown_dark },
     },
     specie,
   }) =>

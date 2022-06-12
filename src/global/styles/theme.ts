@@ -35,9 +35,9 @@ export default {
   },
 
   fonts: {
-    titleLogo: {fontSize: 28, fontFamily: 'RobotoSlab-Medium'},
-    title: {fontSize: 14, fontFamily: 'RobotoSlab-Medium'},
-    body: {fontSize: 10, fontFamily: 'RobotoSlab-Regular'},
-    info: {fontSize: 8, fontFamily: 'RobotoSlab-Regular'},
+    titleLogo: { fontSize: 28, fontFamily: 'RobotoSlab-Medium' },
+    title: { fontSize: 14, fontFamily: 'RobotoSlab-Medium' },
+    body: { fontSize: 10, fontFamily: 'RobotoSlab-Regular' },
+    info: { fontSize: 8, fontFamily: 'RobotoSlab-Regular' },
   },
 };

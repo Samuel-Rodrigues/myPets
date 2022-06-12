@@ -1,9 +1,9 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import theme from './src/global/styles/theme';
 import SplashScreen from 'react-native-splash-screen';
-import {ThemeProvider} from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 
-import {Login, Home, Splash} from '@screens/';
+import { Login } from '@screens/';
 
 const App = () => {
   useEffect(() => {
@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Splash />
+      <Login />
     </ThemeProvider>
   );
 };

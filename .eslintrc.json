@@ -3,6 +3,7 @@
     "es2021": true
   },
   "extends": [
+    "@react-native-community",
     "plugin:react/recommended",
     "airbnb",
     "plugin:@typescript-eslint/recommended",

@@ -1,14 +1,14 @@
-import React, {FC} from 'react';
-import {GestureHandlerRootView} from 'react-native-gesture-handler';
+import React, { FC } from 'react';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
-import {SPECIES_ENUM} from '@utils/';
-import {Wrapper, Title} from './styles';
+import { SPECIES_ENUM } from '@utils/';
+import { Wrapper, Title } from './styles';
 
-import {api} from '../../api/testeLuiz/baseApi';
+import { api } from '../../api/testeLuiz/baseApi';
 
-type Props = {specie: keyof typeof SPECIES_ENUM};
+type Props = { specie: keyof typeof SPECIES_ENUM };
 
-const CardButtonFilter: FC<Props> = ({specie}) => {
+const CardButtonFilter: FC<Props> = ({ specie }) => {
   const pressCard = async () => {
     try {
       await api.get('/users/samuel');

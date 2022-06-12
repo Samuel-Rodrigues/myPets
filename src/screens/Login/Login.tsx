@@ -1,6 +1,5 @@
-import React, {FC} from 'react';
-import {KeyboardAvoidingView, Platform, ScrollView} from 'react-native';
-import {useFormikContext} from 'formik';
+import React, { FC } from 'react';
+import { useFormikContext } from 'formik';
 import {
   Wrapper,
   FormContent,
@@ -10,27 +9,21 @@ import {
   Input,
   BoxTextForgotPass,
   BoxInput,
+  Scroll,
+  KeyboardAvoiding,
 } from './styles';
 
-import {Button, Logo, HelperText} from '@components/';
+import { Button, Logo, HelperText } from '@components/';
 
 type Props = {};
 
 const Login: FC<Props> = () => {
-  const {values, submitForm, errors, setFieldValue, touched} =
+  const { values, submitForm, errors, setFieldValue, touched } =
     useFormikContext<LoginForm>();
 
-  const handleLogin = () => {
-    console.warn('fazer login');
-  };
-
   return (
-    <KeyboardAvoidingView
-      style={{flex: 1}}
-      behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
-      <ScrollView
-        keyboardShouldPersistTaps="handled"
-        contentContainerStyle={{flex: 1}}>
+    <KeyboardAvoiding>
+      <Scroll keyboardShouldPersistTaps="handled">
         <Wrapper>
           <BoxLogo>
             <Logo />
@@ -75,8 +68,8 @@ const Login: FC<Props> = () => {
             </BoxTextForgotPass>
           </FormContent>
         </Wrapper>
-      </ScrollView>
-    </KeyboardAvoidingView>
+      </Scroll>
+    </KeyboardAvoiding>
   );
 };
 
