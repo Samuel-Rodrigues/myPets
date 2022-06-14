@@ -10,3 +10,4 @@ export { default as HelperText } from './HelperText';
 export { default as CardButtonFilter } from './CardButtonFilter';
 export { default as BaseRecButton } from './BaseRecButton';
 export { default as SelectCity } from './SelectCity';
+export { default as SocialLoginButton } from './SocialLoginButton';

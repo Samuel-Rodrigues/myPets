@@ -1,7 +1,6 @@
 import styled from 'styled-components/native';
 import { RFValue } from '../../utils/modules';
-
-import { Typography } from '@components/';
+import Typography from '../Typography';
 
 export const Wrapper = styled.View`
   background-color: ${({ theme }) => theme.colors.primary};
