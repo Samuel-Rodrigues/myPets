@@ -14,7 +14,7 @@ import {
 
 import { Logo, SocialLoginButton } from '@components/';
 
-function SocialLogin() {
+function SocialLogin({ handleGoogleButon }: { handleGoogleButon: () => void }) {
   const data = useAuth();
   console.warn(data);
 
@@ -29,7 +29,10 @@ function SocialLogin() {
           </BoxLogo>
           <FormContent>
             <BoxInput>
-              <SocialLoginButton socialType="google" />
+              <SocialLoginButton
+                socialType="google"
+                onPress={handleGoogleButon}
+              />
             </BoxInput>
             <BoxInput>
               <SocialLoginButton socialType="apple" />

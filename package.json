@@ -11,6 +11,8 @@
     "tsc": "tsc --skipLibCheck"
   },
   "dependencies": {
+    "@react-native-firebase/app": "^14.11.1",
+    "@react-native-google-signin/google-signin": "^7.2.2",
     "axios": "^0.26.0",
     "formik": "^2.2.9",
     "react": "17.0.2",
