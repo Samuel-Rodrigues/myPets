@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "724680658265",
+    "project_id": "mypets-ffe7f",
+    "storage_bucket": "mypets-ffe7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724680658265:android:5443aab197b96d9a139048",
+        "android_client_info": {
+          "package_name": "com.mypets"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724680658265-pt3h95ot966b213g4djl64irt25jptrl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mypets",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "724680658265-7qncasr3cvuvd5hn852kpgkkq8eqgmhq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk3HiwuUrLvpn2HXOT5wZukqjX4p6rUwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724680658265-7qncasr3cvuvd5hn852kpgkkq8eqgmhq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "724680658265-nqiug0vd2ids7bkju3j2872fjc1rq7q1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.myPets"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
